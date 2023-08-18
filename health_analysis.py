@@ -12,8 +12,10 @@ PatientA = {
         "Chronic" : "None",
         "Acute" : "None",
     },
-    "Blood test" : ["RBC", "WBC", "PLT", "MCV"],
-    "Urine test" : ["Color", "Odor", "Turbidity"],
+    "Tests" : {
+        "Blood test" : ["RBC", "WBC", "PLT", "MCV"],
+        "Urine test" : ["Color", "Odor", "Turbidity"],
+    }
 }
 
 PatientB = {
@@ -25,8 +27,10 @@ PatientB = {
         "Chronic" : "None",
         "Acute" : "None",
     },
-    "Blood test" : ["RBC", "WBC", "PLT", "MCV"],
-    "Urine test" : ["Color", "Odor", "Turbidity"],
+    "Tests" : {
+        "Blood test" : ["RBC", "WBC", "PLT", "MCV"],
+        "Urine test" : ["Color", "Odor", "Turbidity"],
+    }
 }
 
 PatientC = {
@@ -38,8 +42,10 @@ PatientC = {
         "Chronic" : "None",
         "Acute" : "None",
     },
-    "Blood test" : ["RBC", "WBC", "PLT", "MCV"],
-    "Urine test" : ["Color", "Odor", "Turbidity"],
+    "Tests" : {
+        "Blood test" : ["RBC", "WBC", "PLT", "MCV"],
+        "Urine test" : ["Color", "Odor", "Turbidity"],
+    }
 }
 
 # This is the MCV result for Harry Potter
