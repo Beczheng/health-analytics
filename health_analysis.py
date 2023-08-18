@@ -8,10 +8,6 @@ PatientA = {
     "Lastname" : "Potter",
     "Age" : "16",
     "Sex" : "M",
-    "Disease" : {
-        "Chronic" : "None",
-        "Acute" : "None",
-    },
     "Tests" : {
         "Blood test" : ["RBC", "WBC", "PLT", "MCV"],
         "Urine test" : ["Color", "Odor", "Turbidity"],
@@ -23,10 +19,6 @@ PatientB = {
     "Lastname" : "Weasley",
     "Age" : "16",
     "Sex" : "M",
-    "Disease" : {
-        "Chronic" : "None",
-        "Acute" : "None",
-    },
     "Tests" : {
         "Blood test" : ["RBC", "WBC", "PLT", "MCV"],
         "Urine test" : ["Color", "Odor", "Turbidity"],
@@ -38,25 +30,21 @@ PatientC = {
     "Lastname" : "Granger",
     "Age" : "16",
     "Sex" : "F",
-    "Disease" : {
-        "Chronic" : "None",
-        "Acute" : "None",
-    },
     "Tests" : {
         "Blood test" : ["RBC", "WBC", "PLT", "MCV"],
         "Urine test" : ["Color", "Odor", "Turbidity"],
     }
 }
 
-# This is a list of the MCV results 
+# This is for the MCV results 
 
 def MCV_result(Name, MCV):
     if MCV < 80:
         result = "RBCs are smaller than normal for " + Name, MCV
     elif MCV >= 80 and MCV <= 100:
-        result = "RBCs are smaller than normal for " + Name, MCV
+        result = "RBCs are normal for " + Name, MCV
     else:
-        result = "RBCs are smaller than normal for " + Name, MCV
+        result = "RBCs are bigger than normal for " + Name, MCV
     return result 
 
 Patient_MCV_result = MCV_result("Harry Potter", 86)
@@ -68,7 +56,7 @@ print(Patient_MCV_result)
 Patient_MCV_result = MCV_result("Hermione Granger", 103)
 print(Patient_MCV_result)
 
-# This is a list of the urine color results
+# This is for the urine color results
 
 def Urine_color_result(Name, Color):
     if Color == "Yellow":
@@ -80,8 +68,8 @@ def Urine_color_result(Name, Color):
 Patient_urine_color_result = Urine_color_result("Harry Potter", "Yellow")
 print(Patient_urine_color_result)
 
-Patient_urine_color_result = Urine_color_result("Ron Weasley", "Black")
+Patient_urine_color_result = Urine_color_result("Ron Weasley", "Red")
 print(Patient_urine_color_result)
 
-Patient_urine_color_result = Urine_color_result("Hermione Granger", "Yellow")
+Patient_urine_color_result = Urine_color_result("Hermione Granger", "Green")
 print(Patient_urine_color_result)
