@@ -48,23 +48,40 @@ PatientC = {
     }
 }
 
-# This is the MCV result for Harry Potter
+# This is a list of the MCV results 
 
-MCV_result = 86
+def MCV_result(Name, MCV):
+    if MCV < 80:
+        result = Name + ": RBCs are smaller than normal"
+    elif MCV >= 80 and MCV <= 100:
+        result = Name + ": RBCs are normal in size"
+    else:
+        result = Name + ": RBCs are bigger than normal" 
+    return result
 
-if MCV_result < 80:
-    print("RBCs are smaller than normal:", MCV_result)
-elif MCV_result >= 80 and MCV_result <= 100:
-    print("RBCs are normal in size:", MCV_result)
-else: 
-    print("RBCs are bigger than normal:", MCV_result)
+Patient_result = MCV_result("Harry Potter", 86)
+print(Patient_result)
 
-# This is the urine color result for Harry Potter
+Patient_result = MCV_result("Ron Weasley", 70)
+print(Patient_result)
 
-Urine_color_result = "yellow"
+Patient_result = MCV_result("Hermione Granger", 103)
+print(Patient_result)
 
-if Urine_color_result == "yellow":
-    print("Urine color is normal:", Urine_color_result)
-else:
-    print("Urine color is not normal:", Urine_color_result)
+# This is a list of the urine color results
 
+def Urine_color_result(Name, Color):
+    if Color == "Yellow":
+        result = Name + ": the urine color is normal"
+    else:
+        result = Name + ": the urine color is not normal"
+    return result
+
+Patient_result = Urine_color_result("Harry Potter", "Yellow")
+print(Patient_result)
+
+Patient_result = Urine_color_result("Ron Weasley", "Black")
+print(Patient_result)
+
+Patient_result = Urine_color_result("Hermione Granger", "Yellow")
+print(Patient_result)
